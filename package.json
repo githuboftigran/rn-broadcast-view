@@ -1,6 +1,6 @@
 {
-  "name": "rn-broadcast-view",
-  "version": "0.0.2",
+  "name": "rn-broadcast-view-tmp",
+  "version": "0.0.3",
   "author": "mail.of.tigran@gmail.com",
   "description": "A native widget which looks like a broadcast station. Circle of 'broadcast waves' appear when 'broadcasting' property is set to true.",
   "homepage": "https://github.com/githuboftigran/RNBroadcastView",
@@ -10,6 +10,7 @@
   },
   "keywords": [
     "broadcast",
+    "broadcast-view",
     "custom",
     "react-component",
     "react-native-component",
