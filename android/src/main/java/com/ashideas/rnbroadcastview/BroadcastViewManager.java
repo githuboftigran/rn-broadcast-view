@@ -14,18 +14,18 @@ public class BroadcastViewManager extends SimpleViewManager<BroadcastView> {
     }
 
     @ReactProp(name = "stationColor")
-    public void setStationColor(BroadcastView view, int stationColor) {
+    public void setStationColor(BroadcastView view, String stationColor) {
         view.setStationColor(stationColor);
     }
 
     @ReactProp(name = "waveColor")
-    public void setWaveColor(BroadcastView view, int waveColor) {
+    public void setWaveColor(BroadcastView view, String waveColor) {
         view.setWaveColor(waveColor);
     }
 
     @ReactProp(name = "broadcasting")
-    public void setBroadCasting(BroadcastView view, boolean broadCasting) {
-        view.setBroadCasting(broadCasting);
+    public void setBroadCasting(BroadcastView view, boolean broadcasting) {
+        view.setBroadcasting(broadcasting);
     }
 
     @Override

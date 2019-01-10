@@ -20,8 +20,8 @@ public class BroadcastView extends View {
     private static final long WAVE_TIME = 3 * 1000; // 3 seconds
     private static final long WAVE_DIFF = WAVE_TIME / 4;
 
-    private static final int DEFAULT_STATION_COLOR = 0xff4286f4;
-    private static final int DEFAULT_WAVE_COLOR = 0xffff60ad;
+    private static final String DEFAULT_STATION_COLOR = "#4286f4";
+    private static final String DEFAULT_WAVE_COLOR = "#ff60ad";
     private static final float LINE_WIDTH_RELATIVE_TO_PARENT = 0.05f;
 
     private Paint stationPaint;
@@ -30,7 +30,7 @@ public class BroadcastView extends View {
     private Handler handler;
     private Runnable addTime;
 
-    private boolean broadCasting;
+    private boolean broadcasting;
     private int stationColor;
     private int waveColor;
 
@@ -65,7 +65,7 @@ public class BroadcastView extends View {
         wavePaint = new Paint(Paint.ANTI_ALIAS_FLAG);
         wavePaint.setStyle(Paint.Style.STROKE);
 
-        broadCasting = false;
+        broadcasting = false;
 
         setStationColor(DEFAULT_STATION_COLOR);
         setWaveColor(DEFAULT_WAVE_COLOR);
@@ -74,21 +74,22 @@ public class BroadcastView extends View {
         addTime = new AddTime();
     }
 
-    public void setStationColor(int stationColor) {
-        this.stationColor = stationColor;
+    public void setStationColor(String stationColor) {
+        this.stationColor = Color.parseColor(stationColor);
+        this.stationPaint.setColor(this.stationColor);
     }
 
-    public void setWaveColor(int waveColor) {
-        this.waveColor = waveColor;
-        this.wavePaint.setColor(waveColor);
+    public void setWaveColor(String waveColor) {
+        this.waveColor = Color.parseColor(waveColor);
+        this.wavePaint.setColor(this.waveColor);
     }
 
-    public void setBroadCasting(boolean broadCasting) {
-        if (this.broadCasting == broadCasting) {
+    public void setBroadcasting(boolean broadcasting) {
+        if (this.broadcasting == broadcasting) {
             return;
         }
-        this.broadCasting = broadCasting;
-        if (!broadCasting) {
+        this.broadcasting = broadcasting;
+        if (!broadcasting) {
             handler.removeCallbacks(addTime);
             ViewCompat.postInvalidateOnAnimation(this);
             return;
@@ -136,7 +137,7 @@ public class BroadcastView extends View {
         canvas.drawLine(cx - r / 4, cy + r - stationWidth, cx + r / 8, cy + r / 2, stationPaint);
         canvas.drawLine(cx + r / 4, cy + r - stationWidth, cx - r / 8, cy + r / 2, stationPaint);
 
-        if (broadCasting) {
+        if (broadcasting) {
             stationPaint.setColor(waveColor);
         }
         canvas.drawCircle(cx, cy, transmitterRadius, stationPaint);
@@ -163,7 +164,7 @@ public class BroadcastView extends View {
     private class AddTime implements Runnable {
         @Override
         public void run() {
-            if (broadCasting) {
+            if (broadcasting) {
                 timeQueue.add(System.currentTimeMillis());
                 handler.postDelayed(this, WAVE_DIFF);
                 ViewCompat.postInvalidateOnAnimation(BroadcastView.this);
