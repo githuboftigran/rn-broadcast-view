@@ -4,11 +4,11 @@ A high quality react native component backed by custom native iOS and Android vi
 <div align="center">
 	<div style="display: inline-block; margin-right: 100px;">
     	<h3>iOS</h3>
-        <img style="width:128px" src="./demo_ios.gif"/>
+        <img width="128" src="./demo_ios.gif"/>
     </div>
     <div style="display: inline-block; margin-left: 100px;">
     	<h3>Android</h3>
-        <img style="width:128px" src="./demo_android.gif"/>
+        <img width="128" src="./demo_android.gif"/>
     </div>
 </div>
 
