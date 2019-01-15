@@ -1,7 +1,8 @@
 # BroadcastView
 A high quality react native component backed by custom native iOS and Android views.
 
-<div align="center">
+<center>
+<span>
 	<div style="display: inline-block; margin-right: 100px;">
     	<h3>iOS</h3>
         <img width="128" src="./demo_ios.gif"/>
@@ -11,6 +12,7 @@ A high quality react native component backed by custom native iOS and Android vi
         <img width="128" src="./demo_android.gif"/>
     </div>
 </div>
+</center>
 
 ## Installation
 1. Add
