@@ -1,9 +1,9 @@
 # BroadcastView
 A high quality react native component backed by custom native iOS and Android views.
 
-<center>
-![Demo](/demo_android.gif)
-</center>
+<p align="center">
+<img src="/demo_android.gif" width="200" height="200">
+</p>
 
 ## Installation
 1. Add
