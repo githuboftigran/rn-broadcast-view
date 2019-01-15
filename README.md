@@ -2,16 +2,7 @@
 A high quality react native component backed by custom native iOS and Android views.
 
 <center>
-<span>
-	<div style="display: inline-block; margin-right: 100px;">
-    	<h3>iOS</h3>
-        <img width="128" src="./demo_ios.gif"/>
-    </div>
-    <div style="display: inline-block; margin-left: 100px;">
-    	<h3>Android</h3>
-        <img width="128" src="./demo_android.gif"/>
-    </div>
-</div>
+![demo](/demo_android.gif)
 </center>
 
 ## Installation
