@@ -2,7 +2,7 @@
 A high quality react native component backed by custom native iOS and Android views.
 
 <p align="center">
-<img src="/demo_android.gif" width="200" height="200">
+<img src="https://raw.githubusercontent.com/githuboftigran/rn-broadcast-view/master/demo_android.gif" width="200" height="200">
 </p>
 
 ## Installation
