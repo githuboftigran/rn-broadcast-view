@@ -2,7 +2,7 @@
 A high quality react native component backed by custom native iOS and Android views.
 
 <center>
-![demo](/demo_android.gif)
+![Demo](/demo_android.gif)
 </center>
 
 ## Installation
