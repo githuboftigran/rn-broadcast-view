@@ -1,30 +1,30 @@
 {
-  "name": "rn-broadcast-view-tmp",
-  "version": "0.0.3",
-  "author": "mail.of.tigran@gmail.com",
-  "description": "A native widget which looks like a broadcast station. Circle of 'broadcast waves' appear when 'broadcasting' property is set to true.",
-  "homepage": "https://github.com/githuboftigran/RNBroadcastView",
+  "name": "rn-broadcast-view",
+  "version": "1.0.0",
+  "author": "Tigran Sahakyan <mail.of.tigran@gmail.com>",
+  "homepage": "https://github.com/githuboftigran/rn-broadcast-view",
   "main": "index.js",
   "scripts": {
     "test": ""
   },
   "keywords": [
-    "broadcast",
-    "broadcast-view",
-    "custom",
+    "react",
     "react-component",
     "react-native-component",
     "react-native",
     "android",
-    "ios"
+    "ios",
+    "custom",
+    "broadcast",
+    "broadcast-view"
   ],
   "repository" : {
     "type": "git",
-    "utl": "https://github.com/githuboftigran/RNBroadcastView.git"
+    "utl": "https://github.com/githuboftigran/rn-broadcast-view.git"
   },
   "dependencies": {
   },
   "devDependencies": {
   },
-  "license": "MIT"
+  "license": "ISC"
 }
