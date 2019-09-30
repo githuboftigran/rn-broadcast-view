@@ -11,11 +11,17 @@ A high quality react native component backed by custom native iOS and Android vi
    * npm: `npm install --save rn-broadcast-view`
    * yarn: `yarn add rn-broadcast-view`
 
-2. Link
+2. Linking
+
+##### For older React native versions ( < 0.60 ) you need to link the library: 
+
    - Run `react-native link  rn-broadcast-view`
    - If linking fails, follow the
      [manual linking steps](https://facebook.github.io/react-native/docs/linking-libraries-ios.html#manual-linking)
 
+##### For newer React native versions ( >= 0.60 ) you need to install pods for iOS:
+   - cd ios && pod install && cd ..
+   - For android everything works out of the box
 
 ## Usage
 

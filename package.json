@@ -1,7 +1,8 @@
 {
   "name": "rn-broadcast-view",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "Tigran Sahakyan <mail.of.tigran@gmail.com>",
+  "description": "A view with 2 states (broadcasting / not broadcasting) with animation",
   "homepage": "https://github.com/githuboftigran/rn-broadcast-view",
   "main": "index.js",
   "scripts": {
@@ -26,5 +27,5 @@
   },
   "devDependencies": {
   },
-  "license": "ISC"
+  "license": "MIT"
 }
